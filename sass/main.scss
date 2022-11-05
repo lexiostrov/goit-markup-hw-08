@@ -1,0 +1,20 @@
+@import "./base/base";
+@import "./base/container";
+@import "./base/portfolio-section";
+@import "./base/section";
+
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/hero";
+@import "./components/peculiarities";
+@import "./components/occupation";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio-filters";
+@import "./components/portfolio-cards";
+
+@import "./utils/variables";
+@import "./utils/hidden";
+
+@import "./layouts/header";
+@import "./layouts/footer";
