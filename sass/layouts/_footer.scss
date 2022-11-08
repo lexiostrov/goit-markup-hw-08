@@ -14,10 +14,15 @@
 }
 
 .footer-adress-lincs {
+  margin-bottom: 60px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -73,12 +78,6 @@
 }
 
 .footerLinks {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
