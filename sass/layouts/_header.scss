@@ -101,10 +101,6 @@
     margin-left: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-
-    // display: block;
-    // margin-left: auto;
-    // padding-top: 21px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -242,6 +238,7 @@
   background-color: white;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
   > .container {
     padding: 0;
     height: 100%;

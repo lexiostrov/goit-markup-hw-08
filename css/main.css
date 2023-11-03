@@ -17,6 +17,7 @@ p {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -59,8 +60,14 @@ img {
   }
 }
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section {
@@ -262,14 +269,6 @@ textarea {
 }
 
 .modalForm__textarea textarea::-moz-placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modalForm__textarea textarea:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -726,11 +725,27 @@ textarea {
 
 .filters {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .portfolio__filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__filters {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filters {
+    margin-bottom: 50px;
+  }
 }
 
 .filters__item + .filters__item {
@@ -763,8 +778,14 @@ textarea {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .cards__link {
@@ -812,8 +833,15 @@ textarea {
   border: transparent;
 }
 
-.cards__item {
-  width: calc((100% - 60px) / 3);
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .cards__title {
@@ -1113,6 +1141,7 @@ textarea {
   background-color: white;
   width: 100vw;
   height: 100vh;
+  z-index: 1;
 }
 .mob-menu > .container {
   padding: 0;
@@ -1407,14 +1436,6 @@ textarea {
 }
 
 .footerForm__field input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footerForm__field input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
